@@ -18,26 +18,43 @@ export default function Home() {
           <div className="div">
             <div className="d-flex justify-content-end gap-4 align-items-center">
               <p className="m-0 text-nav-arc-active fw-bold">Home</p>
-              <p className="m-0 text-nav-arc">Overview</p>
-              <p className="m-0 text-nav-arc">How It Works</p>
-              <p className="m-0 text-nav-arc">Pricing</p>
-              <p className="m-0 text-nav-arc">Team</p>
+              <Link href={"#benefits"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc ">Benefits</p>
+              </Link>
+              <Link href={"#overview"}  className="text-decoration-none">
+
+                <p className="m-0 text-nav-arc">Overview</p>
+              </Link>
+              <Link href={"#choose"}  className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Why Choose Us</p>
+              </Link>
+              <Link href={"#featured"}  className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Featured</p>
+              </Link>
+              <Link href={"#faq"}  className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Faq</p>
+              </Link>
               <button className="btn btn-arc ">Download</button>
             </div>
           </div>
         </div>
       </nav>
       <div className="container mb-5">
-        <div className="section">
-          <div className="d-flex justify-content-between">
+        <div className="section" id="home">
+          <div className="d-flex justify-content-between" >
             <div className="col-6 mt-5">
               <div className="div mt-5 pt-5">
 
-                <p className="text-arc mb-0">BEST APP STREAMING</p>
-                <h1 className="text-white fw-bold">Watch live broadcasts <br />
-                  of gamers playing games.</h1>
+                <small className="text-white mb-0">
+                  <small>
+
+                    BEST APP STREAMING
+                  </small>
+                </small>
+                <h1 className="text-arc fw-bold">Arc Play <br />
+                </h1>
                 <span className="text-desc">
-                  ReadBox is a platform designed to assist you in publishing your creative works, nurturing your aspirations of becoming a proficient writer or comic artist, and ultimately, enabling you to generate income from your endeavors.
+                  Arc Play is a dynamic live streaming platform tailored for gamers, enabling users to watch, stream their gameplay, donate to their favorite streamers, and connect with fellow gaming enthusiasts. With its user-friendly interface and robust features, Arc Play fosters a vibrant gaming community where players can share experiences, support each other, and forge new friendships while enjoying their favorite games.
                 </span><br />
                 <button className="btn btn-outline-arc mt-3"><i className="fa-brands fa-google-play me-2 fa-sm"></i>Download for Android</button>
               </div>
@@ -47,7 +64,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="section mt-3">
+        <div className="section mt-3" id="benefits">
           <div className="d-flex justify-content-between">
             <div className="col-4">
               <div className="card bg-transparent px-3">
@@ -84,73 +101,76 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="section mb-3">
+        <div className="section mb-3" id="overview">
           <div className="d-flex justify-content-between">
             <div className="col">
               <img src="/img/mockup2.png" alt="" />
             </div>
-            <div className="div  text-end">
+            <div className="col-5  text-end">
               <div className="div mt-5 pt-5 ">
 
-                <p className="text-arc mb-0 ">BEST APP STREAMING</p>
-                <h1 className="text-white fw-bold">Watch live broadcasts <br />
-                  of gamers playing games.</h1>
+                <h1 className="text-white fw-bold">Overview</h1>
                 <span className="text-desc">
-                  ReadBox is a platform designed to assist you in publishing your creative works, nurturing your aspirations of becoming a proficient writer or comic artist, and ultimately, enabling you to generate income from your endeavors.
+                  Arc Play: Elevate your gaming experience with our all-in-one platform. Watch live streams, become a streamer, donate to support your favorites, and connect with gamers worldwide. Join us and immerse yourself in the ultimate gaming community.
                 </span><br />
 
               </div>
             </div>
           </div>
         </div>
-        <h2 className="text-center text-white fw-bold">Why choose us</h2>
-        <div className="div mt-5">
-          <div className="d-flex justify-content-between">
-            <div className="col-4 px-5">
-              <div className="card-choose h-100 text-center p-4">
-                <img src="/img/Growth-icon.png" height={100} alt="" />
-                <h5 className="text-white fw-bold mt-2">Growth</h5>
-                <p className="text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quasi modi suscipit iste libero atque explicabo deserunt reprehenderit earum, nulla doloremque aliquam hic placeat, numquam quos odit quaerat dolore exercitationem!</p>
-                <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+        <section id="choose">
+          <h2 className="text-center text-white fw-bold" >Why choose us</h2>
+          <div className="div mt-5">
+            <div className="d-flex justify-content-between">
+              <div className="col-4 px-5">
+                <div className="card-choose h-100 text-center p-4">
+                  <img src="/img/Growth-icon.png" height={100} alt="" />
+                  <h5 className="text-white fw-bold mt-2">Growth</h5>
+                  <p className="text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quasi modi suscipit iste libero atque explicabo deserunt reprehenderit earum, nulla doloremque aliquam hic placeat, numquam quos odit quaerat dolore exercitationem!</p>
+                  <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+                </div>
               </div>
-            </div>
-            <div className="col-4 px-5">
-              <div className="card-choose h-100 text-center p-4">
-                <img src="/img/community-icon.png" height={100} alt="" />
-                <h5 className="text-white fw-bold mt-2">Community</h5>
-                <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero doloremque voluptas quasi, voluptates commodi at optio reprehenderit quae consectetur, error cupiditate aperiam animi, ducimus ullam ?</p>
-                <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+              <div className="col-4 px-5">
+                <div className="card-choose h-100 text-center p-4">
+                  <img src="/img/community-icon.png" height={100} alt="" />
+                  <h5 className="text-white fw-bold mt-2">Community</h5>
+                  <p className="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero doloremque voluptas quasi, voluptates commodi at optio reprehenderit quae consectetur, error cupiditate aperiam animi, ducimus ullam ?</p>
+                  <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+                </div>
               </div>
-            </div>
-            <div className="col-4 px-5">
-              <div className="card-choose h-100 text-center p-4">
-                <img src="/img/Growth-icon.png" height={100} alt="" />
-                <h5 className="text-white fw-bold mt-2">Innovative</h5>
-                <p className="text-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium aliquid amet, alias nesciunt explicabo ipsum qui ipsa aut quasi voluptatibus error sunt suscipit maiores nulla commodi? Dicta, eos possimus.</p>
-                <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+              <div className="col-4 px-5">
+                <div className="card-choose h-100 text-center p-4">
+                  <img src="/img/Growth-icon.png" height={100} alt="" />
+                  <h5 className="text-white fw-bold mt-2">Innovative</h5>
+                  <p className="text-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium aliquid amet, alias nesciunt explicabo ipsum qui ipsa aut quasi voluptatibus error sunt suscipit maiores nulla commodi? Dicta, eos possimus.</p>
+                  <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="section mt-5">
-          <div className="d-flex justify-content-between">
-            <div className="col-6 mt-5">
-              <div className="div mt-5 pt-5">
+        </section>
+        <section>
 
-                <p className="text-arc mb-0">BEST APP STREAMING</p>
-                <h1 className="text-white fw-bold">Watch live broadcasts <br />
-                  of gamers playing games.</h1>
-                <span className="text-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore eos id, eum facilis amet, optio in corrupti libero recusandae fugiat nam obcaecati voluptatum sint. Repellendus dolor perspiciatis sint exercitationem?
-                </span><br />
+          <div className="section mt-5" id="featured">
+            <div className="d-flex justify-content-between">
+              <div className="col-6 mt-5">
+                <div className="div mt-5 pt-5">
 
+                  <p className="text-arc mb-0">Featured</p>
+                  <h1 className="text-white fw-bold">Watch live broadcasts <br />
+                    of gamers playing games.</h1>
+                  <span className="text-desc">
+                    Arc Play transforms gaming with live streaming, streamlined support for favorite streamers, and a vibrant community hub where gamers connect, find friends, and discuss strategies. With a user-friendly interface and real-time interaction via live chat, Arc Play offers the ultimate gaming experience for enthusiasts worldwide.
+                  </span><br />
+
+                </div>
+              </div>
+              <div className="col-6 text-end">
+                <img src="/img/mockup3.png" alt="" />
               </div>
             </div>
-            <div className="col-6 text-end">
-              <img src="/img/mockup3.png" alt="" />
-            </div>
           </div>
-        </div>
+        </section>
         <section>
           <div className="card-choose text-white">
             <div className="card-body">
@@ -162,15 +182,15 @@ export default function Home() {
                 <div className="col-6">
                   <p>Watch live broadcasts of gamers playing games.Watch live broadcasts of gamers playing games.</p>
                   <Link href="#">
-                  
-                  <img src="/img/get-it-on.png" alt="" />
+
+                    <img src="/img/get-it-on.png" alt="" />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="mt-5 pt-5">
+        <section className="mt-5 pt-5" id="faq">
           <div className="d-flex pt-4">
             <div className="col">
               <h2 className="text-white fw-bold">Frequently <br />

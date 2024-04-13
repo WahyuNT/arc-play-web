@@ -13,6 +13,7 @@ color: var(--var-primary);
 }
 .text-nav-arc{
     color: white;
+  
 }
 .text-nav-arc-active{
     color: var(--var-primary);
