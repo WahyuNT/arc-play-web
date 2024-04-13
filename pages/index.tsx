@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -160,7 +161,10 @@ export default function Home() {
                 </div>
                 <div className="col-6">
                   <p>Watch live broadcasts of gamers playing games.Watch live broadcasts of gamers playing games.</p>
+                  <Link href="#">
+                  
                   <img src="/img/get-it-on.png" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -263,7 +267,7 @@ export default function Home() {
         </section>
       </div>
       <footer className="bg-white py-3 footer-arc">
-        <p className="m-0 text-center">© Arc Play - 2024</p>
+        <p className="m-0 text-center">Copyright © 2024 Arc Play</p>
       </footer>
     </>
   )
