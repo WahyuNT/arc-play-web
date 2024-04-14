@@ -59,7 +59,7 @@ export default function Home() {
                 <button className="btn btn-outline-arc mt-3"><i className="fa-brands fa-google-play me-2 fa-sm"></i>Download for Android</button>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 text-end">
               <img src="/img/mockup.png" alt="" />
             </div>
           </div>
