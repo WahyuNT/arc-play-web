@@ -95,14 +95,9 @@ color: white;
     width: 100%;
     background-color: transparent;
     background-color: #161826;
+    z-index: 1000;
 }
-.navbar-arc-down{
-    position: fixed;
-    width: 100%;
-    background-color: transparent;
-    background-color: #161826;
 
-}
 
 .bg-nav{
     background-color: #161826;

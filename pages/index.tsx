@@ -9,41 +9,42 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <nav className="navbar navbar-arc-down">
+      <nav className="navbar navbar-arc">
         <div className="container d-flex justify-content-between my-2">
           <div className="div">
             <img src="/img/arc_icon.png" height={"50px"} alt="" />
           </div>
           <div className="d-block d-lg-none">
-            <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-backdrop="false" data-bs-target="#menunav">
+            <button type="button" className="btn bg-transparent " data-bs-toggle="modal" data-backdrop="false" data-bs-target="#menunav">
               <i className="fa-solid fa-bars fa-xl text-arc"></i>
             </button>
-            <div className="d-none d-lg-block">
-              <div className="d-flex justify-content-end gap-4 align-items-center">
-                <Link href={"#home"} className="text-decoration-none">
-                  <p className="m-0 text-nav-arc-active fw-bold">Home</p>
-                </Link>
-                <Link href={"#benefits"} className="text-decoration-none">
-                  <p className="m-0 text-nav-arc ">Benefits</p>
-                </Link>
-                <Link href={"#overview"} className="text-decoration-none">
+          </div>
+          <div className="d-none d-lg-block">
+            <div className="d-flex justify-content-end gap-4 align-items-center">
+              <Link href={"#home"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc-active fw-bold">Home</p>
+              </Link>
+              <Link href={"#benefits"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc ">Benefits</p>
+              </Link>
+              <Link href={"#overview"} className="text-decoration-none">
 
-                  <p className="m-0 text-nav-arc">Overview</p>
-                </Link>
-                <Link href={"#choose"} className="text-decoration-none">
-                  <p className="m-0 text-nav-arc">Why Choose Us</p>
-                </Link>
-                <Link href={"#featured"} className="text-decoration-none">
-                  <p className="m-0 text-nav-arc">Featured</p>
-                </Link>
-                <Link href={"#faq"} className="text-decoration-none">
-                  <p className="m-0 text-nav-arc">Faq</p>
-                </Link>
-                <button className="btn btn-arc ">Download</button>
+                <p className="m-0 text-nav-arc">Overview</p>
+              </Link>
+              <Link href={"#choose"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Why Choose Us</p>
+              </Link>
+              <Link href={"#featured"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Featured</p>
+              </Link>
+              <Link href={"#faq"} className="text-decoration-none">
+                <p className="m-0 text-nav-arc">Faq</p>
+              </Link>
+              <button className="btn btn-arc ">Download</button>
 
-              </div>
             </div>
           </div>
+
         </div>
       </nav>
 
@@ -53,13 +54,26 @@ export default function Home() {
             <div className="modal-content bg-nav borad20" >
 
               <div className="modal-body text-center text-white">
-                <p className="">Home</p>
-                <p className="">Benefits</p>
-                <p className="">Overview</p>
-                <p className="">Why Choose Us</p>
-                <p className="">Featured</p>
-                <p className="">Faq</p>
-                <button className="btn btn-arc mb-2">Download</button>
+                <Link href={"#home"} className="text-decoration-none">
+                  <p className=" text-nav-arc-active fw-bold">Home</p>
+                </Link>
+                <Link href={"#benefits"} className="text-decoration-none">
+                  <p className=" text-nav-arc ">Benefits</p>
+                </Link>
+                <Link href={"#overview"} className="text-decoration-none">
+
+                  <p className=" text-nav-arc">Overview</p>
+                </Link>
+                <Link href={"#choose"} className="text-decoration-none">
+                  <p className=" text-nav-arc">Why Choose Us</p>
+                </Link>
+                <Link href={"#featured"} className="text-decoration-none">
+                  <p className=" text-nav-arc">Featured</p>
+                </Link>
+                <Link href={"#faq"} className="text-decoration-none">
+                  <p className=" text-nav-arc">Faq</p>
+                </Link>
+                <button className="btn btn-arc ">Download</button>
               </div>
 
             </div>
@@ -88,44 +102,44 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="section mt-lg-5 mt-3" id="benefits">
-          <div className="d-flex justify-content-between flex-wrap">
-            <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits   text-lg-start text-center">
-              <div className="card bg-transparent px-3 ">
-                <div className="d-flex align-items-center  justify-content-center justify-content-lg-start ">
+ 
 
-                  <img src="/img/streaming-icon.png" alt="" />
-                  <h5 className="m-0 text-white ms-2">Live Streaming</h5>
+          <div className=" mt-lg-5 mt-3" id="benefits">
+            <div className="d-flex justify-content-between flex-wrap">
+              <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits   text-lg-start text-center">
+                <div className="card bg-transparent px-3 ">
+                  <div className="d-flex align-items-center  justify-content-center justify-content-lg-start ">
+
+                    <img src="/img/streaming-icon.png" alt="" />
+                    <h5 className="m-0 text-white ms-2">Live Streaming</h5>
+                  </div>
+                  <p className="text-desc mt-1">You can engage with your fans by live streaming while playing the game, allowing you to interact with them in real-time and share your gaming experiences.</p>
                 </div>
-                <p className="text-desc mt-1">You can engage with your fans by live streaming while playing the game, allowing you to interact with them in real-time and share your gaming experiences.</p>
               </div>
-            </div>
+              <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits vl text-lg-start text-center">
+                <div className="card bg-transparent px-3">
+                  <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
 
-
-            <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits vl text-lg-start text-center">
-              <div className="card bg-transparent px-3">
-                <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-
-                  <img src="/img/playicon.png" alt="" />
-                  <h5 className="m-0 text-white ms-2">Watch Streaming</h5>
+                    <img src="/img/playicon.png" alt="" />
+                    <h5 className="m-0 text-white ms-2">Watch Streaming</h5>
+                  </div>
+                  <p className="text-desc mt-1">You don't have to be a broadcaster yourself; rather, you can immerse yourself in the world of broadcasting by tuning in to watch professionals at work.</p>
                 </div>
-                <p className="text-desc mt-1">You don't have to be a broadcaster yourself; rather, you can immerse yourself in the world of broadcasting by tuning in to watch professionals at work.</p>
               </div>
-            </div>
+              <div className="col-lg-4 col-12 mb-4 mb-lg-0 vl text-lg-start text-center">
+                <div className="card bg-transparent px-3">
+                  <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
 
-            <div className="col-lg-4 col-12 mb-4 mb-lg-0 vl text-lg-start text-center">
-              <div className="card bg-transparent px-3">
-                <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-
-                  <img src="/img/earn-icon.png" alt="" />
-                  <h5 className="m-0 text-white ms-2">Earn Icon</h5>
+                    <img src="/img/earn-icon.png" alt="" />
+                    <h5 className="m-0 text-white ms-2">Earn Icon</h5>
+                  </div>
+                  <p className="text-desc mt-1">
+                    Monetize your gaming sessions by broadcasting them, turning your gameplay into a source of income and entertaining your audience with your gaming skills.</p>
                 </div>
-                <p className="text-desc mt-1">
-                  Monetize your gaming sessions by broadcasting them, turning your gameplay into a source of income and entertaining your audience with your gaming skills.</p>
               </div>
             </div>
           </div>
-        </div>
+     
 
 
         <div className="section mb-3" id="overview">
@@ -145,6 +159,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
         <section id="choose">
           <h2 className="text-center text-white fw-bold mt-4 mt-lg-0" >Why choose us</h2>
           <div className="div mt-5">
@@ -227,12 +242,12 @@ export default function Home() {
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="headingOne">
                     <button className="accordion-button  bg-transparent text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      How can I access <span className="text-arc mx-1"> Arc Play </span> and start enjoying its features?
+                      How can I access Arc Play and start enjoying its features?
                     </button>
                   </h2>
                   <div id="collapseOne" className="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      You can access <span className="text-arc "> Arc Play </span>  by downloading the app from the App Store or Google Play Store. Once downloaded, sign up for an account, and you'll be ready to explore and enjoy the platform's offerings.
+                      You can access Arc Play  by downloading the app from the App Store or Google Play Store. Once downloaded, sign up for an account, and you'll be ready to explore and enjoy the platform's offerings.
                     </div>
                   </div>
                 </div>
@@ -244,12 +259,12 @@ export default function Home() {
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="headingTwo">
                     <button className="accordion-button  bg-transparent text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      What types of content are available on <span className="text-arc ms-1"> Arc Play </span>?
+                      What types of content are available on Arc Play?
                     </button>
                   </h2>
                   <div id="collapseTwo" className="accordion-collapse collapse  " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      <span className="text-arc "> Arc Play </span> offers a diverse range of content, including live streams, videos, articles, and interactive experiences, covering various topics such as gaming, entertainment, lifestyle, and more.
+                      Arc Play offers a diverse range of content, including live streams, videos, articles, and interactive experiences, covering various topics such as gaming, entertainment, lifestyle, and more.
                     </div>
                   </div>
                 </div>
@@ -261,12 +276,12 @@ export default function Home() {
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="heading3">
                     <button className="accordion-button  bg-transparent text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                      Is <span className="text-arc mx-1"> Arc Play </span> free to use, or are there subscription fees?
+                      Is Arc Play free to use, or are there subscription fees?
                     </button>
                   </h2>
                   <div id="collapse3" className="accordion-collapse collapse  " aria-labelledby="heading3" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      <span className="text-arc "> Arc Play </span> offers both free and premium content. While some content may be freely accessible, premium features and exclusive content may require a subscription or one-time purchase.
+                      Arc Play offers both free and premium content. While some content may be freely accessible, premium features and exclusive content may require a subscription or one-time purchase.
                     </div>
                   </div>
                 </div>
@@ -278,12 +293,12 @@ export default function Home() {
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="heading4">
                     <button className="accordion-button  bg-transparent text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                      Can I engage with other users or content creators on <span className="text-arc ms-1"> Arc Play </span>?
+                      Can I engage with other users or content creators on Arc Play?
                     </button>
                   </h2>
                   <div id="collapse4" className="accordion-collapse collapse  " aria-labelledby="heading4" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      Yes, <span className="text-arc "> Arc Play </span> encourages user interaction and engagement. You can interact with other users through comments, likes, shares, and participating in community discussions. Additionally, you can connect with content creators directly through the platform.
+                      Yes, Arc Play encourages user interaction and engagement. You can interact with other users through comments, likes, shares, and participating in community discussions. Additionally, you can connect with content creators directly through the platform.
                     </div>
                   </div>
                 </div>
@@ -295,12 +310,12 @@ export default function Home() {
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="heading5">
                     <button className="accordion-button  bg-transparent text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                      How can I contribute my own content to <span className="text-arc ms-1"> Arc Play </span>?
+                      How can I contribute my own content to Arc Play?
                     </button>
                   </h2>
                   <div id="collapse5" className="accordion-collapse collapse  " aria-labelledby="heading5" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      If you're a content creator interested in sharing your work on <span className="text-arc "> Arc Play </span>, you can apply to become a creator through the platform's submission process. Once approved, you'll gain access to tools and features to publish and monetize your content on Arc Play.
+                      If you're a content creator interested in sharing your work on Arc Play, you can apply to become a creator through the platform's submission process. Once approved, you'll gain access to tools and features to publish and monetize your content on Arc Play.
                     </div>
                   </div>
                 </div>
