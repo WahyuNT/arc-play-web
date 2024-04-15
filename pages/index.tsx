@@ -9,45 +9,69 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar navbar-arc-down">
         <div className="container d-flex justify-content-between my-2">
           <div className="div">
-
             <img src="/img/arc_icon.png" height={"50px"} alt="" />
           </div>
-          <div className="div">
-            <div className="d-flex justify-content-end gap-4 align-items-center">
-              <p className="m-0 text-nav-arc-active fw-bold">Home</p>
-              <Link href={"#benefits"} className="text-decoration-none">
-                <p className="m-0 text-nav-arc ">Benefits</p>
-              </Link>
-              <Link href={"#overview"}  className="text-decoration-none">
+          <div className="d-block d-lg-none">
+            <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-backdrop="false" data-bs-target="#menunav">
+              <i className="fa-solid fa-bars fa-xl text-arc"></i>
+            </button>
+            <div className="d-none d-lg-block">
+              <div className="d-flex justify-content-end gap-4 align-items-center">
+                <Link href={"#home"} className="text-decoration-none">
+                  <p className="m-0 text-nav-arc-active fw-bold">Home</p>
+                </Link>
+                <Link href={"#benefits"} className="text-decoration-none">
+                  <p className="m-0 text-nav-arc ">Benefits</p>
+                </Link>
+                <Link href={"#overview"} className="text-decoration-none">
 
-                <p className="m-0 text-nav-arc">Overview</p>
-              </Link>
-              <Link href={"#choose"}  className="text-decoration-none">
-                <p className="m-0 text-nav-arc">Why Choose Us</p>
-              </Link>
-              <Link href={"#featured"}  className="text-decoration-none">
-                <p className="m-0 text-nav-arc">Featured</p>
-              </Link>
-              <Link href={"#faq"}  className="text-decoration-none">
-                <p className="m-0 text-nav-arc">Faq</p>
-              </Link>
-              <button className="btn btn-arc ">Download</button>
+                  <p className="m-0 text-nav-arc">Overview</p>
+                </Link>
+                <Link href={"#choose"} className="text-decoration-none">
+                  <p className="m-0 text-nav-arc">Why Choose Us</p>
+                </Link>
+                <Link href={"#featured"} className="text-decoration-none">
+                  <p className="m-0 text-nav-arc">Featured</p>
+                </Link>
+                <Link href={"#faq"} className="text-decoration-none">
+                  <p className="m-0 text-nav-arc">Faq</p>
+                </Link>
+                <button className="btn btn-arc ">Download</button>
+
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <div className="container mb-5">
-        <div className="section" id="home">
-          <div className="d-flex justify-content-between" >
-            <div className="col-6 mt-5">
-              <div className="div mt-5 pt-5">
+
+      <div className="container mb-5 pt-5">
+        <div className="modal fade" style={{ backgroundColor: " #16182600" }} id="menunav" tabIndex={-1} aria-labelledby="menunavLabel" aria-hidden="true">
+          <div className="modal-dialog mt-5 pt-5 px-5" >
+            <div className="modal-content bg-nav borad20" >
+
+              <div className="modal-body text-center text-white">
+                <p className="">Home</p>
+                <p className="">Benefits</p>
+                <p className="">Overview</p>
+                <p className="">Why Choose Us</p>
+                <p className="">Featured</p>
+                <p className="">Faq</p>
+                <button className="btn btn-arc mb-2">Download</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div className="section pt-lg-5" id="home">
+          <div className="d-flex justify-content-between flex-wrap" >
+            <div className="col-lg-6 col-12 mt-lg-5 text-center text-lg-start">
+              <div className="div mt-5 pt-lg-5">
 
                 <small className="text-white mb-0">
                   <small>
-
                     BEST APP STREAMING
                   </small>
                 </small>
@@ -59,16 +83,16 @@ export default function Home() {
                 <button className="btn btn-outline-arc mt-3"><i className="fa-brands fa-google-play me-2 fa-sm"></i>Download for Android</button>
               </div>
             </div>
-            <div className="col-6 text-end">
-              <img src="/img/mockup.png" alt="" />
+            <div className="col-lg-6 col-12 text-lg-end text-center">
+              <img src="/img/mockup.png" className="w-75" alt="" />
             </div>
           </div>
         </div>
-        <div className="section mt-3" id="benefits">
-          <div className="d-flex justify-content-between">
-            <div className="col-4">
-              <div className="card bg-transparent px-3">
-                <div className="d-flex align-items-center">
+        <div className="section mt-lg-5 mt-3" id="benefits">
+          <div className="d-flex justify-content-between flex-wrap">
+            <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits   text-lg-start text-center">
+              <div className="card bg-transparent px-3 ">
+                <div className="d-flex align-items-center  justify-content-center justify-content-lg-start ">
 
                   <img src="/img/streaming-icon.png" alt="" />
                   <h5 className="m-0 text-white ms-2">Live Streaming</h5>
@@ -76,10 +100,11 @@ export default function Home() {
                 <p className="text-desc mt-1">You can engage with your fans by live streaming while playing the game, allowing you to interact with them in real-time and share your gaming experiences.</p>
               </div>
             </div>
-            <div className="vl"></div>
-            <div className="col-4">
+
+
+            <div className="col-lg-4 col-12 mb-4 mb-lg-0 border-bottom-benefits vl text-lg-start text-center">
               <div className="card bg-transparent px-3">
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
 
                   <img src="/img/playicon.png" alt="" />
                   <h5 className="m-0 text-white ms-2">Watch Streaming</h5>
@@ -87,10 +112,10 @@ export default function Home() {
                 <p className="text-desc mt-1">You don't have to be a broadcaster yourself; rather, you can immerse yourself in the world of broadcasting by tuning in to watch professionals at work.</p>
               </div>
             </div>
-            <div className="vl"></div>
-            <div className="col-4">
+
+            <div className="col-lg-4 col-12 mb-4 mb-lg-0 vl text-lg-start text-center">
               <div className="card bg-transparent px-3">
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
 
                   <img src="/img/earn-icon.png" alt="" />
                   <h5 className="m-0 text-white ms-2">Earn Icon</h5>
@@ -101,13 +126,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
         <div className="section mb-3" id="overview">
-          <div className="d-flex justify-content-between">
-            <div className="col">
-              <img src="/img/mockup2.png" alt="" />
+          <div className="d-flex justify-content-between flex-wrap-reverse">
+            <div className="col-lg-6 col-12 text-lg-start text-center  ">
+              <img src="/img/mockup2.png" className="w-100" alt="" />
             </div>
-            <div className="col-5  text-end">
-              <div className="div mt-5 pt-5 ">
+            <div className="col-lg-5  col-12 text-lg-end text-center">
+              <div className="div mt-lg-5 pt-lg-5 ">
 
                 <h1 className="text-white fw-bold">Overview</h1>
                 <span className="text-desc">
@@ -119,10 +146,10 @@ export default function Home() {
           </div>
         </div>
         <section id="choose">
-          <h2 className="text-center text-white fw-bold" >Why choose us</h2>
+          <h2 className="text-center text-white fw-bold mt-4 mt-lg-0" >Why choose us</h2>
           <div className="div mt-5">
-            <div className="d-flex justify-content-between">
-              <div className="col-4 px-5">
+            <div className="d-flex justify-content-between flex-wrap ">
+              <div className="col-lg-4  mb-4 mb-lg-0 col-12 px-lg-3  ">
                 <div className="card-choose h-100 text-center p-4">
                   <img src="/img/Growth-icon.png" height={100} alt="" />
                   <h5 className="text-white fw-bold mt-2">Growth</h5>
@@ -130,7 +157,7 @@ export default function Home() {
                   <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
                 </div>
               </div>
-              <div className="col-4 px-5">
+              <div className="col-lg-4  mb-4 mb-lg-0 col-12 px-lg-3  ">
                 <div className="card-choose h-100 text-center p-4">
                   <img src="/img/community-icon.png" height={100} alt="" />
                   <h5 className="text-white fw-bold mt-2">Community</h5>
@@ -138,9 +165,9 @@ export default function Home() {
                   <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
                 </div>
               </div>
-              <div className="col-4 px-5">
+              <div className="col-lg-4  mb-4 mb-lg-0 col-12 px-lg-3  ">
                 <div className="card-choose h-100 text-center p-4">
-                  <img src="/img/Growth-icon.png" height={100} alt="" />
+                  <img src="/img/innovative-icon.png" height={100} alt="" />
                   <h5 className="text-white fw-bold mt-2">Innovative</h5>
                   <p className="text-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laudantium aliquid amet, alias nesciunt explicabo ipsum qui ipsa aut quasi voluptatibus error sunt suscipit maiores nulla commodi? Dicta, eos possimus.</p>
                   <button className="btn btn-outline-arc rounded-pill mt-2 w-50">Details</button>
@@ -150,11 +177,10 @@ export default function Home() {
           </div>
         </section>
         <section>
-
-          <div className="section mt-5" id="featured">
-            <div className="d-flex justify-content-between">
-              <div className="col-6 mt-5">
-                <div className="div mt-5 pt-5">
+          <div className="section mt-lg-5" id="featured">
+            <div className="d-flex justify-content-between flex-wrap">
+              <div className="col-lg-6 col-12 text-center text-lg-start mt-5">
+                <div className="div mt-lg-5 pt-lg-5">
 
                   <p className="text-arc mb-0">Featured</p>
                   <h1 className="text-white fw-bold">Watch live broadcasts <br />
@@ -165,7 +191,7 @@ export default function Home() {
 
                 </div>
               </div>
-              <div className="col-6 text-end">
+              <div className="col-lg-6 col-12 text-center text-lg-end text-end">
                 <img src="/img/mockup3.png" alt="" />
               </div>
             </div>
@@ -190,13 +216,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mt-5 pt-5" id="faq">
-          <div className="d-flex pt-4">
-            <div className="col">
+        <section className="mt-lg-5 pt-lg-5" id="faq">
+          <div className="d-flex pt-4 flex-wrap">
+            <div className="col-lg-6 col-12 text-center text-lg-start">
               <h2 className="text-white fw-bold">Frequently <br />
                 Asked <span className="text-arc"> Questions</span></h2>
             </div>
-            <div className="col">
+            <div className="col-lg-6 col-12 text-center ">
               <div className="accordion text-white " id="accordionExample">
                 <div className="accordion-item accordian-arc ">
                   <h2 className="accordion-header " id="headingOne">
@@ -285,7 +311,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
       </div>
+
       <footer className="bg-white py-3 footer-arc">
         <p className="m-0 text-center">Copyright © 2024 Arc Play</p>
       </footer>
